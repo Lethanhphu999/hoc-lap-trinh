@@ -38,7 +38,8 @@ Ví dụ sử dụng var trong JavaScript:
 
 ```js
 if (true) {
-  var test = true; // sử dụng "var" thay vì "let"}
+  var test = true; // sử dụng "var" thay vì "let"
+  }
 
   console.log(test); // true - biến test vẫn nhìn thấy ở ngoài if
 }
@@ -50,7 +51,8 @@ Nếu bạn sử dụng `let test` thay vì `var test`, thì biến `test` chỉ
 
 ```js
 if (true) {
-  let test = true; // sử dụng "let" thay vì "var"}
+  let test = true; // sử dụng "let" thay vì "var"
+  }
 
   console.log(test); // Uncaught ReferenceError: test is not defined
 }
