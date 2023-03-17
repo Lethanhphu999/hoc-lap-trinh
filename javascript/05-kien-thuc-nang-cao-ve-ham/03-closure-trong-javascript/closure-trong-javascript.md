@@ -225,9 +225,9 @@ adder2(10);
 
 Trong ví dụ trên, hàm closures là một hàm không tên `function(number)`. Hàm closures này sử dụng biến cục bộ của outer function là `intro` và `local`.
 
-Khi mình gọi hàm `adder(2)`, hàm này thực hiện và kết quả trả về được gán vào biến `adder2`. Nói cách khác, `adder2` chứa **nested function** được trả về từ việc gọi hàm `adder(2)`.
+Khi mình gọi hàm `adder(2)`, hàm này thực hiện và kết quả trả về được gán vào biến `add`. Nói cách khác, `add` chứa **nested function** được trả về từ việc gọi hàm `adder(2)`.
 
-Sau đó, mình gọi `adder2(10)` và kết quả trả về là `12`.
+Sau đó, mình gọi `add(10)` và kết quả trả về là `12`.
 
 Chứng tỏ, hàm closures vẫn có thể truy cập tới biến cục bộ của outer function là `intro`, `local` ngay cả khi hàm outer `adder2` đã thực hiện xong.
 
